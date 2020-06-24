@@ -1,0 +1,7 @@
+.continaer {
+    max-width: 1125px;
+}
+
+@media all and (max-width: 1000px) {
+
+}

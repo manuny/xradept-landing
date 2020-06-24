@@ -1,1 +1,1 @@
-Лендинг XRAdept
+XRAdept Landing

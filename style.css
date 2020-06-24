@@ -1,5 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+     width: 100%;
+ }
+
 .continaer {
     max-width: 1125px;
+    margin: auto;
+    position: relative;
+}
+
+.possibilities1 {
+    background-color: #efefef;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.possibilities2 {
+    background-color: #efefef;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+
+.possibilities3 {
+    background-color: #efefef;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: -200%;
+    top: 0;
+}
+
+.possibilities-section {
+    background-image: url(images/possibilities-background.jpg);
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.white-maintitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.possibilities-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.possibilities-h2 {
+    padding-right: 30px;
+}
+
+.white-h2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.possibilities-title {
+    padding-bottom: 20px;
+}
+
+.white-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.possibilities-subtitle {
+    padding-bottom: 40px;
+}
+
+.white-subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.possibilities-phone {
+    position: absolute;
+    z-index: 3;
+    left: 190px;
+    top: -61px;
+}
+
+.possibilities-macbook-phone {
+    position: absolute;
+    z-index: 2;
+    left: 304px;
+    top: -40px;
+}
+
+.possibilities-macbook {
+
+}
+
+.possibilities-microchips {
+
+}
+
+.possibilities-navigation {
+    padding-top: 376px;
+    padding-bottom: 38px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.possibilities-line {
+    width: 76px;
+    height: 4px;
+    background-color: #A3A2A5;
+    border-radius: 8px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.possibilities1 .possibilities-line-second:active {
+    left: 100%;
+}
+
+.possibilities2 .possibilities-line-second:active {
+    left: 0%;
+}
+
+
+.possibilities-line-active {
+    background-color: #FFA800;
 }
 
 @media all and (max-width: 1000px) {

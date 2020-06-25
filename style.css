@@ -78,9 +78,50 @@ select {
   }
 }
 
+/*Подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald&display=swap');
 
+/*Начало верстки header*/
+body {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
 
+.header .container-menu .header-menu {
+    background-color: coral;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 105px;
+    padding: 24px 50px;
+}
 
+.header .container-menu .menu-items {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header .container-menu .menu-items .menu-link {
+    margin-right: 67px;
+}
+
+.header .container-menu .menu-items .menu-link:last-child {
+    margin-right: 0;
+}
+
+.header .container-menu .menu-items .menu-link .link-item  {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
 
 
 

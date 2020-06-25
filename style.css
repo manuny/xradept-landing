@@ -264,7 +264,6 @@ body {
     }
     .header .container .header-main {
         padding: 0 16px 0 16px;
-        margin: 0 auto;
     }
 
     .header .container-menu .header-menu .menu-hamburger {
@@ -276,50 +275,26 @@ body {
     }
     
     .header-main .content-title {
-        margin-bottom: 10px;
-        font-family: 'Oswald', sans-serif;
-        font-style: normal;
-        font-weight: normal;
+        margin-bottom: 10px;        
         font-size: 56px;
         line-height: 90%;
-        color: #FFFFFF;
     }
     
     .header-main .content-subtitle {
         margin-bottom: 10px;
-        font-family: 'Oswald', sans-serif;
-        font-style: normal;
-        font-weight: 500;
         font-size: 24px;
         line-height: 36px;
-        color: #FFA800;
     }
     
     .header-main .content-description {
         margin-bottom: 64px ;
         font-size: 14px;
         line-height: 130%;
-        color: #FFFFFF;
     }
     
     .header-main .content-button {
-        display: inline-block;
         margin-bottom: 142px;
-        padding: 20px 0;
         width: 328px;
         height: 64px;
-        background: #6646E9;
-        border-radius: 2px;
-        text-align: center;
-    }
-    
-    .header-main .content-button .button-link {
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
     }
 }

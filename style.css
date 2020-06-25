@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
 }
 
-.continaer {
+.possibilities-container {
     max-width: 1125px;
     margin: auto;
     position: relative;
@@ -39,60 +39,60 @@ body {
 
 .slide-one {
     left: 0;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 .slide-two,
 .slide-three {
     left: 100%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-1:checked~.slide-one {
     left: 0;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-1:checked~.slide-two {
     left: 100%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-1:checked~.slide-three {
     left: 200%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-2:checked~.slide-two {
     left: 0;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-2:checked~.slide-one {
     left: -100%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-3:checked~.slide-three {
     left: 0;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-3:checked~.slide-two {
     left: -100%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 #slide-3:checked~.slide-one {
     left: -200%;
-    transition: left 0.7s ease-out;
+    transition: left 0.3s ease-out;
 }
 
 .possibilities-section {
     background-image: url(images/possibilities-background.jpg);
     background-size: cover;
     padding: 60px 0;
-    height: 280px;
+    height: 400px;
 }
 
 .white-maintitle {
@@ -150,50 +150,57 @@ body {
     color: #FFFFFF;
 }
 
+.possibilities-foto {
+    max-width: 746px;
+    margin: auto;
+    position: relative;
+    padding: 0 20px;
+}
+
 .possibilities-phone {
     position: absolute;
     z-index: 4;
-    left: 190px;
+    left: 0px;
     top: -61px;
 }
 
 .possibilities-macbook-phone {
     position: absolute;
     z-index: 3;
-    left: 304px;
+    left: 114px;
     top: -40px;
 }
 
 .possibilities-ellipse {
     position: absolute;
     z-index: 2;
-    left: 266px;
+    left: 76px;
     top: -146px;
 }
 
 .possibilities-macbook {
     position: absolute;
     z-index: 3;
-    left: 192px;
+    left: 0px;
     top: -95px;
 }
 
 .possibilities-macbook-ellipse {
     position: absolute;
     z-index: 2;
-    left: 220px;
+    left: 30px;
     top: -202px;
 }
 
 .possibilities-microchips {
     position: absolute;
     z-index: 2;
-    left: 263px;
+    left: 73px;
     top: -172px;
 }
 
 .possibilities-navigation {
-    padding-top: 376px;
+    padding-top: 776px;
     padding-bottom: 38px;
     margin: auto;
     display: flex;
@@ -215,7 +222,15 @@ body {
     background-color: #FFA800;
 }
 
-.possibilities-line-active {
+#slide-1:checked~.possibilities-navigation .possibilities-line-first {
+    background-color: #FFA800;
+}
+
+#slide-2:checked~.possibilities-navigation .possibilities-line-second {
+    background-color: #FFA800;
+}
+
+#slide-3:checked~.possibilities-navigation .possibilities-line-third {
     background-color: #FFA800;
 }
 

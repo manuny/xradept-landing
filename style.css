@@ -29,6 +29,7 @@
 }
   
 .section-efficiency .section-subtitle {
+  margin-bottom: 70px;
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -39,6 +40,27 @@
   
 .section-efficiency .subtitle-ico {
   margin-left: auto; 
+}
+
+.section-efficiency .section-efficiency-block {
+  max-width: 362px;
+}
+
+.section-efficiency .block-title {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2A2241;
+}
+
+.section-efficiency .block-content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #797979;
 }
 
 @media all and (max-width: 1000px) {

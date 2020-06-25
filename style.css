@@ -79,11 +79,11 @@ select {
 }
 
 /*Подключение шрифтов*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Oswald:wght@500;700&display=swap');
 
 /*Начало верстки header*/
 body {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -93,12 +93,12 @@ body {
 }
 
 .header {
-    background: url(./images/header-background.jpg) center no-repeat;
+    background: url(./images/header-background.jpg) no-repeat center;
 }
 
-.container-menu {
-    width: 1366px;
-    margin: 0 auto;
+.container-menu {    
+    /*width: 1366px;
+    margin: 0 auto;*/
 }
 
 .header .container-menu .header-menu {
@@ -108,6 +108,25 @@ body {
     align-items: center;
     margin-bottom: 105px;
     padding: 24px 50px;
+}
+
+.header .container-menu .header-menu .menu-logo {
+    display: block;
+}
+
+.header .container-menu .header-menu .menu-logo .logo-link {
+    height: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .container-menu .header-menu .menu-logo .logo-link .logo-text {
+    margin-left: 7px;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
 }
 
 .header .container-menu .menu-items {
@@ -131,8 +150,13 @@ body {
     color: #FFFFFF;
 }
 
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+}
+
 .header-main {
-    padding: 0 694px 0 120px;
+    padding: 0 573px 0 0;
 }
 
 .header-main .content-title {
@@ -191,8 +215,18 @@ body {
     background: #503D9D;
 }
 
-.continaer {
-    max-width: 1125px;
+@media all and (max-width: 1366px) {
+    .header {
+        background: url(./images/header-background-media1366px.jpg) no-repeat center;
+    }
+
+    .container-menu {
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+    
+    .header-main {
+        padding: 0 573px 0 120px;
 }
 
 @media all and (max-width: 1000px) {

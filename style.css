@@ -123,7 +123,66 @@ body {
     color: #FFFFFF;
 }
 
+.header-main {
+    padding: 0 694px 0 120px;
+    background-color: dimgray;
+}
 
+.header-main .content-title {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90%;
+    color: #FFFFFF;
+}
+
+.header-main .content-subtitle {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 100%;
+    color: #FFA800;
+}
+
+.header-main .content-description {
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.header-main .content-button {
+    display: inline-block;
+    margin-bottom: 109px;
+    padding: 20px 0;
+    width: 362px;
+    height: 64px;
+    background: #6646E9;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.header-main .content-button .button-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header-main .content-button:hover {
+    background: #8870E9;
+}
+
+.header-main .content-button:active {
+    background: #503D9D;
+}
 
 .continaer {
     max-width: 1125px;

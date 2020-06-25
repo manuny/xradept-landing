@@ -83,7 +83,7 @@ select {
 
 /*Начало верстки header*/
 body {
-    width: 1366px;
+    width: 1920px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -92,8 +92,16 @@ body {
     line-height: 150%;
 }
 
+.header {
+    background: url(./images/header-background.jpg) center no-repeat;
+}
+
+.container-menu {
+    width: 1366px;
+    margin: 0 auto;
+}
+
 .header .container-menu .header-menu {
-    background-color: coral;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -125,7 +133,6 @@ body {
 
 .header-main {
     padding: 0 694px 0 120px;
-    background-color: dimgray;
 }
 
 .header-main .content-title {

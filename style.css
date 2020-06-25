@@ -200,14 +200,6 @@ body {
     background-color: #FFA800;
 }
 
-.possibilities1 .possibilities-line-second:active {
-    left: 100%;
-}
-
-.possibilities2 .possibilities-line-second:active {
-    left: 0%;
-}
-
 .possibilities-line-active {
     background-color: #FFA800;
 }

@@ -45,7 +45,7 @@
   margin-left: auto; 
 }
 
-.section-efficiency .blocks_container {
+.section-efficiency .blocks-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -72,7 +72,7 @@
   color: #797979;
 }
 
-.section-efficiency .cards_container {
+.section-efficiency .cards-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -115,7 +115,7 @@
 
 .section-efficiency .section-picture {
   height: 322px;
-  background: url(./images/efficiency_bg.jpg) center no-repeat;
+  background: url(./images/efficiency-bg.jpg) center no-repeat;
   background-size: cover;
 }
 

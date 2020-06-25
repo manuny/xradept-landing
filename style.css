@@ -14,7 +14,7 @@ body {
     max-width: 1125px;
     margin: auto;
     position: relative;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
 .possibilities {
@@ -22,7 +22,6 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    height: 818px;
 }
 
 [id^="slide"] {
@@ -111,10 +110,6 @@ body {
     padding-bottom: 60px;
 }
 
-.possibilities-h2 {
-    padding-right: 30px;
-}
-
 .white-h2 {
     font-family: Oswald;
     font-style: normal;
@@ -137,10 +132,6 @@ body {
     color: #FFFFFF;
 }
 
-.possibilities-subtitle {
-    padding-bottom: 40px;
-}
-
 .white-subtitle {
     font-family: Montserrat;
     font-style: normal;
@@ -154,14 +145,14 @@ body {
     max-width: 746px;
     margin: auto;
     position: relative;
-    padding: 0 20px;
 }
 
 .possibilities-phone {
     position: absolute;
     z-index: 4;
-    left: 0px;
+    left: 0;
     top: -61px;
+    max-width: 29vw;
 }
 
 .possibilities-macbook-phone {
@@ -169,6 +160,7 @@ body {
     z-index: 3;
     left: 114px;
     top: -40px;
+    max-width: 80vw;
 }
 
 .possibilities-ellipse {
@@ -176,27 +168,31 @@ body {
     z-index: 2;
     left: 76px;
     top: -146px;
+    max-width: 80vw;
 }
 
 .possibilities-macbook {
     position: absolute;
     z-index: 3;
-    left: 0px;
+    left: 0;
     top: -95px;
+    max-width: 100vw;
 }
 
 .possibilities-macbook-ellipse {
     position: absolute;
     z-index: 2;
-    left: 30px;
-    top: -202px;
+    left: 0;
+    top: -192px;
+    max-width: 100vw;
 }
 
 .possibilities-microchips {
     position: absolute;
     z-index: 2;
-    left: 73px;
+    left: 0;
     top: -172px;
+    max-width: 100vw;
 }
 
 .possibilities-navigation {
@@ -234,4 +230,74 @@ body {
     background-color: #FFA800;
 }
 
-@media all and (max-width: 1000px) {}
+@media all and (max-width: 1000px) {
+
+    
+    .possibilities-section {
+        padding: 80px 0 24px 0;
+    }
+
+    .possibilities-logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -56px;
+        margin: auto;
+        width: 32px;
+        height: 32px;
+    }
+
+    .white-maintitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .white-h2 {
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    .possibilities-title {
+        padding-bottom: 8px;
+    }
+
+    .white-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .white-subtitle {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .possibilities-row {
+        padding-bottom: 32px;
+    }
+
+    .possibilities-macbook-phone {
+        left: 50px;
+        top: -40px;
+    }
+
+    .possibilities-ellipse {
+        left: 56px;
+        top: -80px;
+    }
+
+    .possibilities-macbook-ellipse {
+        left: 0;
+        top: -146px;
+    }
+
+    .possibilities-microchips {
+        top: -142px;
+    }
+
+    .possibilities-line {
+        width: 40px;
+        height: 2px;
+        margin-right: 10px;
+    }
+
+}

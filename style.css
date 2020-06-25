@@ -152,23 +152,37 @@ body {
 
 .possibilities-phone {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     left: 190px;
     top: -61px;
 }
 
 .possibilities-macbook-phone {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     left: 304px;
     top: -40px;
 }
 
-.possibilities-macbook {
+.possibilities-ellipse {
     position: absolute;
     z-index: 2;
+    left: 266px;
+    top: -146px;
+}
+
+.possibilities-macbook {
+    position: absolute;
+    z-index: 3;
     left: 192px;
     top: -95px;
+}
+
+.possibilities-macbook-ellipse {
+    position: absolute;
+    z-index: 2;
+    left: 220px;
+    top: -202px;
 }
 
 .possibilities-microchips {
@@ -194,6 +208,7 @@ body {
     margin-right: 20px;
     display: inline-block;
     cursor: pointer;
+    z-index: 4;
 }
 
 .possibilities-line:hover {

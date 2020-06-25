@@ -6,47 +6,93 @@
     padding: 0;
 }
 
- body {
-     width: 100%;
- }
+body {
+    width: 100%;
+}
 
 .continaer {
     max-width: 1125px;
     margin: auto;
     position: relative;
+    padding: 0 20px;
 }
 
-.possibilities1 {
+.possibilities {
     background-color: #efefef;
     width: 100%;
     overflow: hidden;
+    position: relative;
+    height: 818px;
+}
+
+[id^="slide"] {
+    display: none;
+}
+
+.slide {
     position: absolute;
-    left: 0;
     top: 0;
-}
-
-.possibilities2 {
-    background-color: #efefef;
     width: 100%;
-    overflow: hidden;
-    position: absolute;
+    height: 100%;
     left: -100%;
-    top: 0;
 }
 
-.possibilities3 {
-    background-color: #efefef;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
+.slide-one {
+    left: 0;
+    transition: left 0.7s ease-out;
+}
+
+.slide-two,
+.slide-three {
+    left: 100%;
+    transition: left 0.7s ease-out;
+}
+
+#slide-1:checked~.slide-one {
+    left: 0;
+    transition: left 0.7s ease-out;
+}
+
+#slide-1:checked~.slide-two {
+    left: 100%;
+    transition: left 0.7s ease-out;
+}
+
+#slide-1:checked~.slide-three {
+    left: 200%;
+    transition: left 0.7s ease-out;
+}
+
+#slide-2:checked~.slide-two {
+    left: 0;
+    transition: left 0.7s ease-out;
+}
+
+#slide-2:checked~.slide-one {
+    left: -100%;
+    transition: left 0.7s ease-out;
+}
+
+#slide-3:checked~.slide-three {
+    left: 0;
+    transition: left 0.7s ease-out;
+}
+
+#slide-3:checked~.slide-two {
+    left: -100%;
+    transition: left 0.7s ease-out;
+}
+
+#slide-3:checked~.slide-one {
     left: -200%;
-    top: 0;
+    transition: left 0.7s ease-out;
 }
 
 .possibilities-section {
     background-image: url(images/possibilities-background.jpg);
     background-size: cover;
     padding: 60px 0;
+    height: 280px;
 }
 
 .white-maintitle {
@@ -77,6 +123,7 @@
     line-height: 62px;
     color: #FFFFFF;
 }
+
 .possibilities-title {
     padding-bottom: 20px;
 }
@@ -118,11 +165,17 @@
 }
 
 .possibilities-macbook {
-
+    position: absolute;
+    z-index: 2;
+    left: 192px;
+    top: -95px;
 }
 
 .possibilities-microchips {
-
+    position: absolute;
+    z-index: 2;
+    left: 263px;
+    top: -172px;
 }
 
 .possibilities-navigation {
@@ -140,6 +193,11 @@
     border-radius: 8px;
     margin-right: 20px;
     display: inline-block;
+    cursor: pointer;
+}
+
+.possibilities-line:hover {
+    background-color: #FFA800;
 }
 
 .possibilities1 .possibilities-line-second:active {
@@ -150,11 +208,8 @@
     left: 0%;
 }
 
-
 .possibilities-line-active {
     background-color: #FFA800;
 }
 
-@media all and (max-width: 1000px) {
-
-}
+@media all and (max-width: 1000px) {}

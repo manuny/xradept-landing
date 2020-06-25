@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .section-efficiency {
@@ -13,6 +14,7 @@
 .container {
   max-width: 1125px;
   margin: 0 auto;
+  padding: 16px 24px;
 }
 
 .section-efficiency .about {
@@ -109,6 +111,22 @@
   font-size: 12px;
   line-height: 18px;
   color: #797979;
+}
+
+.section-efficiency .section-picture {
+  height: 322px;
+  background: url(./images/efficiency_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.section-picture .container {
+  position: relative;
+}
+
+.section-efficiency .section-picture img {
+  position: absolute;
+  left: 0;
+  top: -219px;
 }
 
 

@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Oswald:wght@500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .section-efficiency {
@@ -18,10 +25,7 @@
 }
 
 .section-efficiency .about {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 22px;
   color: #8870E9;
 }
@@ -34,7 +38,6 @@
 .section-efficiency .section-subtitle {
   margin-bottom: 70px;
   font-family: 'Oswald', sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 42px;
   line-height: 62px;
@@ -57,17 +60,12 @@
 
 .section-efficiency .card-big-title {
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 18px;
   line-height: 22px;
   color: #2A2241;
 }
 
 .section-efficiency .card-big-description {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
   line-height: 27px;
   color: #797979;
 }
@@ -86,7 +84,6 @@
 }
 
 .section-efficiency .card-title {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -99,15 +96,12 @@
 
 .section-efficiency .card-title {
   margin-bottom: 20px;
-  font-family: 'Montserrat',sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   color: #2A2241;
 }
 .section-efficiency .card-description {
-  font-family: 'Montserrat',sans-serif;
-  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: #797979;

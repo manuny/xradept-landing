@@ -1,85 +1,5 @@
-/*сброс стилей css взят из сети*/
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 /*Подключение шрифтов*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500&display=swap');
 
 /*Начало верстки header*/
 body {
@@ -93,28 +13,19 @@ body {
 }
 
 .header {
-    background: url(./images/header-background.jpg) no-repeat center;
+    background: url(images/header-background.jpg) no-repeat center;
 }
 
-.container-menu {    
-    /*width: 1366px;
-    margin: 0 auto;*/
-}
-
-.header .container-menu .header-menu {
+.header .header-menu {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
     padding: 24px 50px;
 }
 
-.header .container-menu .header-menu .menu-logo {
-    display: block;
-}
-
-.header .container-menu .header-menu .menu-logo .logo-link {
+.header .header-menu .menu-logo .logo-link {
     height: 30px;
     display: flex;
     flex-flow: row nowrap;
@@ -122,14 +33,14 @@ body {
     text-decoration: none;
 }
 
-.header .container-menu .header-menu .menu-logo .logo-link .logo-text {
+.header .header-menu .menu-logo .logo-link .logo-text {
     margin-left: 7px;
     font-size: 28px;
     line-height: 34px;
     color: #FFFFFF;
 }
 
-.header .container-menu .header-menu .menu-hamburger {
+.header .header-menu .menu-hamburger {
     width: 24px;
     height: 24px;
     display: flex;
@@ -139,7 +50,7 @@ body {
     display: none;
 }
 
-.header .container-menu .header-menu .menu-hamburger .lines-wrap {
+.header .header-menu .menu-hamburger .lines-wrap {
     width: 100%;
     height: 19px;
     display: flex;
@@ -148,7 +59,7 @@ body {
     align-items: baseline;
 }
 
-.header .container-menu .header-menu .menu-hamburger .lines-wrap .menu-btn-line {
+.header .header-menu .menu-hamburger .lines-wrap .menu-btn-line {
     transition: 0.2s;
     width: 100%;
     height: 3px;
@@ -156,32 +67,25 @@ body {
     border-radius: 1px;
 }
 
-.header .container-menu .header-menu .menu-list .menu-items {
+.header .header-menu .menu-list .menu-items {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.header .container-menu .header-menu .menu-list .menu-items .menu-link {
+.header .header-menu .menu-list .menu-items .menu-link {
     margin-right: 67px;
 }
 
-.header .container-menu .header-menu .menu-list .menu-items .menu-link:last-child {
+.header .header-menu .menu-list .menu-items .menu-link:last-child {
     margin-right: 0;
 }
 
-.header .container-menu .header-menu .menu-items .menu-link .link-item  {
+.header .header-menu .menu-items .menu-link .link-item  {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     line-height: 150%;
     color: #FFFFFF;
-}
-
-.header .container-menu .header-menu .mobile-menu {
-    display: none;
-    width: 224;
-    height: 812px;
-    background-color: #000000;
 }
 
 .container {
@@ -190,14 +94,12 @@ body {
 }
 
 .header-main {
-    padding: 0 680px 0 0;
+    width: 560px;
 }
 
 .header-main .content-title {
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 80px;
     line-height: 90%;
     color: #FFFFFF;
@@ -206,7 +108,6 @@ body {
 .header-main .content-subtitle {
     margin-bottom: 20px;
     font-family: 'Oswald', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 42px;
     line-height: 100%;
@@ -249,28 +150,20 @@ body {
     background: #503D9D;
 }
 
-@media all and (max-width: 1366px) {
-    .header {
-        background: url(./images/header-background-media1366px.jpg) no-repeat top center;
-    }
-
-    .header .header-main {
-        padding: 0 694px 0 120px;
-    }
-
 @media all and (max-width: 1000px) {
-    .header .container-menu .header-menu {
-        padding: 24px 16px;
+    .header .header-menu {
+        padding: 12px 16px;
     }
     .header .container .header-main {
-        padding: 0 16px 0 16px;
+        width: 328px;
+        padding: 0 16px;
     }
 
-    .header .container-menu .header-menu .menu-hamburger {
+    .header .header-menu .menu-hamburger {
         display: flex;
     }
 
-    .header .container-menu .header-menu .menu-items .menu-link {
+    .header .header-menu .menu-items .menu-link {
         display: none;
     }
     

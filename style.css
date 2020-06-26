@@ -67,3 +67,10 @@ body {
     align-items: center;
     color: #2A2241;
 }
+.img {
+    position: absolute;
+    width: 386px;
+    height: 595px;
+    left: 980px;
+    top: 0px;
+}

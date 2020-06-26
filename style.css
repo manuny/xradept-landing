@@ -21,7 +21,6 @@ body {
 .container {
   max-width: 1125px;
   margin: 0 auto;
-  padding: 16px 24px;
 }
 
 .section-efficiency .subtitle-content .about {
@@ -124,12 +123,16 @@ body {
   position: absolute;
   left: 0;
   top: -219px;
+  
 }
 
 
 @media all and (max-width: 1000px) {
   body {
     font-size: 14px;
+  }
+  .container {
+    padding: 24px 16px 0 16px;
   }
   .section-efficiency .subtitle-ico {
     margin-bottom: 24px;
@@ -168,15 +171,23 @@ body {
     flex: 0 0 auto;
     margin-bottom: 24px;
   }
-
+  .section-efficiency .card:last-child {
+    margin-bottom: 140px;
+  }
   .section-efficiency .card-ico {
     margin-bottom: 16px;
   }
   .section-efficiency .card-title {
     margin-bottom: 12px;
   }
+
   .section-efficiency .section-picture {
     background: url(./images/efficiency-@media-bg.jpg) center no-repeat;
     background-size: cover;
+  }
+  .section-picture .container img {
+    max-width: 276px;
+    top: -90px;
+    left: 42px;
   }
 }

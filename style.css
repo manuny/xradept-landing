@@ -301,3 +301,15 @@ body {
     }
 
 }
+
+@media all and (max-width: 420px) {
+
+    .possibilities-navigation {
+        padding-top: 620px;
+    }
+
+    .possibilities-microchips {
+        top: -92px;
+    }
+
+}

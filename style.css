@@ -12,9 +12,11 @@ body {
   font-weight: normal;
   font-size: 18px;
 }
+/* Начало стилей блока "Эффективность"*/
 
 .section-efficiency {
   width: 100%;
+  padding-top: 52px;
   background: #FAFAFA;
 }
   
@@ -23,18 +25,18 @@ body {
   margin: 0 auto;
 }
 
-.section-efficiency .subtitle-content .about {
-  font-weight: 600;
-  line-height: 22px;
-  color: #8870E9;
-}
-  
 .section-efficiency .subtitle-block {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 70px;
+}
+
+.section-efficiency .subtitle-content .about {
+  font-weight: 600;
+  line-height: 22px;
+  color: #8870E9;
 }
   
 .section-efficiency .subtitle {
@@ -45,10 +47,6 @@ body {
   color: #2A2241;
 }
   
-.section-efficiency .subtitle-ico {
-   
-}
-
 .section-efficiency .blocks-container {
   display: flex;
   flex-flow: row wrap;
@@ -123,7 +121,6 @@ body {
   position: absolute;
   left: 0;
   top: -219px;
-  
 }
 
 
@@ -131,12 +128,19 @@ body {
   body {
     font-size: 14px;
   }
-  .container {
-    padding: 24px 16px 0 16px;
+
+  .section-efficiency {
+    padding-top: 24px;
   }
+
+  .container {
+    padding: 0 16px;
+  }
+
   .section-efficiency .subtitle-ico {
     margin-bottom: 24px;
   }
+
   .section-efficiency .subtitle-content .about {
     margin-bottom: 8px;
     font-size: 14px;
@@ -147,6 +151,7 @@ body {
     font-size: 28px;
     line-height: 100%;
   }
+
   .section-efficiency .subtitle-block {
     flex-flow: column-reverse nowrap;
     align-items: center;
@@ -157,6 +162,7 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
   }
+
   .section-efficiency .card-big {
     flex: 0 0 auto;
     margin-bottom: 48px;
@@ -171,12 +177,15 @@ body {
     flex: 0 0 auto;
     margin-bottom: 24px;
   }
+
   .section-efficiency .card:last-child {
     margin-bottom: 140px;
   }
+
   .section-efficiency .card-ico {
     margin-bottom: 16px;
   }
+
   .section-efficiency .card-title {
     margin-bottom: 12px;
   }
@@ -185,6 +194,7 @@ body {
     background: url(./images/efficiency-@media-bg.jpg) center no-repeat;
     background-size: cover;
   }
+
   .section-picture .container img {
     max-width: 276px;
     top: -90px;

@@ -74,3 +74,19 @@ body {
     left: 980px;
     top: 0px;
 }
+/* Line 1 */
+.group1 {
+    position: absolute;
+    left: 8.78%;
+    right: 71.67%;
+    top: 34.79%;
+    bottom: 10.08%;
+}
+.line1 {
+    position: absolute;
+    left: 50px;
+    right: 0px;
+    top: 13.11%;
+    bottom: 86.89%;
+    border: 1px solid #8870E9;
+}

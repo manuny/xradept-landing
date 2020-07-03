@@ -48,7 +48,7 @@ body {
     right: 0%;
     top: 0%;
     bottom: 71.26%;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -100,11 +100,4 @@ body {
     right: 90.1%;
     top: -1.52%;
     bottom: 72.26%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 150%;
-    background: #FAFAFA;
-    /*border: 1px solid #6646E9;*/
 }

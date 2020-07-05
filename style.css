@@ -99,5 +99,67 @@ body {
     left: 0.83%;
     right: 90.1%;
     top: -1.52%;
-    bottom: 72.26%;
+    bottom: 72.26%; 
+    background-image: url(images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Зарегистрируйтесь */
+.Sign {
+    position: absolute;
+    left: 0.83%;
+    right: 15.48%;
+    top: 30.49%;
+    bottom: 62.5%;
+}
+/* H3 */
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2A2241;
+}
+/* и начните пользоваться сервисом бесплатно */
+.free {
+    position: absolute;
+    left: 0.83%;
+    right: 14.78%;
+    top: 40.55%;
+    bottom: 33.84%;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2A2241; 
+}
+/* Начать */
+
+.button {
+    position: absolute;
+    width: 171px;
+    height: 64px;
+    left: 0px;
+    top: 264px;
+    background: #6646E9;
+    border-radius: 2px;
+}
+.logo-text {   
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 37.5%;
+    bottom: 37.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
 }

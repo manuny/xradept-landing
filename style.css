@@ -163,3 +163,22 @@ p {
     text-transform: uppercase;
     color: #ffffff;
 }
+/* Line 2 */
+.group2 {
+    position: absolute;
+    left: 29.8%;
+    right: 50.73%;
+    top: 34.79%;
+    bottom: 10.08%;
+}
+/* 2 */
+.numeral2 { 
+    position: absolute;
+    left: 0.83%;
+    right: 90.1%;
+    top: -1.52%;
+    bottom: 72.26%;
+    background-image: url(images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

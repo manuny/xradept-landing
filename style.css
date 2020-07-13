@@ -1,184 +1,134 @@
-.continaer {
-    max-width: 1125px;
+.container {
+    display: flex;
+    background: #FAFAFA;
+    justify-content: flex-end;
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
-/*Подключение шрифтов*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-* {
+.container .subtitle-block {
+    padding: 60px 16px 28px 16px;
+    width: 891px;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-}
-/* блок простой старт */
-.continaer {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #FAFAFA;
-}
-.subtitle-block {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 65.21%;
-}
-.subtitle-content {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    position: absolute;
-    width: 1125px;
-    height: 87px;
-    left: 120px;
-    top: 60px;
-}
-.start {
-    position: static;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 71.26%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+
+.container .start {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     color: #8870E9;
 }
-.step {
-    position: static;
-    left: 0%;
-    right: 0%;
-    top: 28.74%;
-    bottom: 0%;
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
+  
+.container .step {
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 42px;
     line-height: 62px;
-    display: flex;
-    align-items: center;
     color: #2A2241;
+    margin-bottom: 60px;
 }
-.img {
-    position: absolute;
-    width: 386px;
-    height: 595px;
-    left: 980px;
-    top: 0px;
+  
+.container .columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 22px;
 }
-/* Line 1 */
-.group1 {
-    position: absolute;
-    left: 8.78%;
-    right: 71.67%;
-    top: 34.79%;
-    bottom: 10.08%;
+  
+.container .register {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
 }
-.line {
-    position: absolute;
-    left: 50px;
-    right: 0px;
-    top: 13.11%;
-    bottom: 86.89%;
-    border: 1px solid #8870E9;
+  
+.container  .numeral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
 }
-/* 1 */
-.numeral {
-    position: absolute;
-    left: 0.83%;
-    right: 90.1%;
-    top: -1.52%;
-    bottom: 72.26%; 
-    background-image: url(images/1.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  
+.container .line {
+    height: 2px;
+    width: 216px;
+    min-width: 124px;
+    background-color: #8870E9;
+    border: none;
+    margin-left: 8px;
 }
-/* Зарегистрируйтесь */
-.Sign {
-    position: absolute;
-    left: 0.83%;
-    right: 15.48%;
-    top: 30.49%;
-    bottom: 62.5%;
-}
-/* H3 */
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
+  
+.container .sign {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #2A2241;
+    padding-bottom: 10px;
 }
-/* и начните пользоваться сервисом бесплатно */
-.free {
-    position: absolute;
-    left: 0.83%;
-    right: 14.78%;
-    top: 40.55%;
-    bottom: 33.84%;
-}
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+  
+.container .free {
+    font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #2A2241; 
+    color: #2A2241;
+    padding-bottom: 48px;
+    max-width: 226px;
 }
-/* Начать */
 
-.button {
-    position: absolute;
+.container .button-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: auto 0 0 0;
+}
+  
+.container .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 171px;
-    height: 64px;
-    left: 0px;
-    top: 264px;
+    padding: 20px;
     background: #6646E9;
     border-radius: 2px;
 }
-.logo-text {   
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 37.5%;
-    bottom: 37.5%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
+  
+.container .button:hover {
+    background: #8870E9;
 }
-/* Line 2 */
-.group2 {
-    position: absolute;
-    left: 29.8%;
-    right: 50.73%;
-    top: 34.79%;
-    bottom: 10.08%;
+  
+.container .column-button:active {
+    background: #503D9D;
 }
-/* 2 */
-.numeral2 { 
-    position: absolute;
-    left: 0.83%;
-    right: 90.1%;
-    top: -1.52%;
-    bottom: 72.26%;
-    background-image: url(images/2.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  
+.container .free-link {
+    font-weight: 600;
+    color: #8870E9;
 }
+  
+.container .google {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0 0 0;
+}
+  
+.container .google a {
+    width: 125px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 2px;
+}
+  
+.container .google a:first-of-type {
+    margin-right: 16px;
+}
+  
+
+
+
+
